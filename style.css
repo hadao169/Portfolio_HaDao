@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #212529;
+}
+
+.navbar{
+    height: 80px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: 100px;
+    gap: 500px;
+}
+
+.navbar .homepage{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(255, 158, 12);
+    
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.navbar ul li:first-child a {
+    color: rgb(255, 158, 12);
+}
+
+.navbar ul li a{
+    color: rgb(213, 213, 213);
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.navbar ul li:hover a{
+    color: rgb(255, 158, 12);
+}
+
+.main{
+    display: flex;
+    height: auto;
+    align-items: center;
+    margin-left: 100px;
+    gap: 100px;
+}
+
+.profile-picture{
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 40px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description h1{
+    font-size: 56px;
+    font-weight: bold;
+    color: rgb(218, 218, 218);
+}
+
+.description h2{
+    color: rgb(202, 91, 0);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.description > p{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 40px;
+    max-width: 750px;
+    line-height: 25px;
+}
+
+.btn-box a{
+    background-color: rgb(255, 158, 12);
+    height: 30px;
+    width: 180px;
+    color: rgb(22, 22, 22);
+    padding: 6px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.btn-box a:hover{
+    opacity: 0.6;
+}
+
+.achievement{
+    display: flex;
+    margin-top: 35px;
+    flex-wrap: nowrap;
+    gap: 24px;
+
+}
+
+.achievement .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #343434;
+    width: 100%;
+    height: 65px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    transition: border 0.5s ease;
+}
+
+.achievement .item:hover{
+    border: 1px solid rgb(255, 158, 12);
+}
+
+.achievement .item .icon{
+    display: flex;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 35px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+} 
+
+.achievement .item:hover .icon{
+    background-color: rgb(255, 158, 12);
+}
+
+.achievement .item .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.achievement .item .info h3{
+    color: rgb(255, 158, 12);
+    font-size: 22px;
+}
+
+.achievement .item .info p{
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.achievement .item .bx{
+    font-size: 25px;
+}
+
+.achievement .item a i:hover{
+    transition: color 0.3s ease;
+    cursor: pointer;
+    color: white;
+}
+
+footer{
+    margin-left:100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 20px;
+}
+
+footer > h3{
+    color: rgb(255, 158, 12);
+    margin-bottom: 0;
+}
+.social-media{
+    width: 180px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.social-media a{
+    display: inline-flex;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgb(255, 158, 12);
+    border-radius: 50%; 
+    transition: background-color 0.3s ease;
+}
+
+.social-media a:hover{
+    background-color: rgb(200, 124, 9);
+    border: 2px solid rgba(255, 255, 255, 0.673);
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 20px 160px;
+    position: relative;
+
+}
+
+.skills .left-section{
+    max-width: 50%;
+    margin-right: 150px;
+}
+
+.skills .left-section div{
+    background-color: #4e4e4e;
+    height: 35px;
+    width: 110px;
+    border-radius: 10px;
+    color: rgb(255, 158, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.skills .left-section h3{
+    font-size: 26px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .left-section p{
+    color: rgb(218, 218, 218);
+    font-size: 16px;
+    line-height: 25px;
+
+}
+.skills .right-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 35%;
+    flex-wrap: wrap;
+    gap: 18px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+.skills .right-section a{
+    width: 45px;
+    height: 45px;
+    background-color: #4e4e4e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.skills .right-section i{
+    font-size: 35px;
+    color: white;
+    background-color: transparent;
+}
+
+.contact p{
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .profile-picture{
+        width: 350px;
+        height: 350px;
+        margin-right: 50px;
+    }
+
+    .main{
+        height: 85%;
+    }
+    .description h1{
+        font-size: 42px;
+    }
+
+    .description h2{
+        font-size: 24px;
+    }
+
+    .description p{
+        font-size: 14px;
+    }
+
+    .achievement .item{
+        height: 50px;
+    }
+
+    .description .achievement .item .info h3{
+        font-size: 16px;
+    }
+
+    .description .achievement .item .info p{
+        font-size: 9px;
+    }
+
+    .description .achievement .item .icon{
+        width: 24px;
+        height: 24px;
+        border: none;
+        font-size: 12px;
+    }    
+
+    .description .achievement .item .icon i{
+        font-size: 20px;
+    }
+
+    .skills{
+        margin: 35px 0px 120px 120px;
+    }
+
+    .skills .left-section{
+        margin-right: 100px;
+    }
+
+    .skills .right-section{
+        top: px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .achievement{
+        flex-direction: column;
+    }
+
+    .achievement .item{
+        width: 60%;
+    }
+}
