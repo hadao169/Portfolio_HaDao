@@ -12,7 +12,7 @@
 <body>
   <header class="navbar" id="header">
     <h2><a href="/" class="homepage">My Portfolio</a></h2>
-    <ul>
+    <ul id="sidemenu">
       <li><a href="/">Home</a></li>
       <li><a href="./pages/about.html">About</a></li>
       <li><a href="./pages/skills.html">Skills</a></li>
@@ -30,7 +30,10 @@
         by the prospect of working alongside experienced professionals, embracing challenges, and continuously
         broadening my knowledge in the field.
       </p>
-
+      <button id="hire-btn" onclick="openContactForm()">Hire me</button>
+      <div class="numOfNoti">
+        <i class='bx bxs-bell'></i>
+      </div>
       <div class="achievement">
         <div class="item">
           <div class="icon">
@@ -40,7 +43,6 @@
             <h3>Bachelor</h3>
             <p>Education</p>
           </div>
-          <!-- add link here -->
           <a><i class="bx bx-chevron-right"></i></a>
         </div>
 
@@ -52,8 +54,6 @@
             <h3>+0.5</h3>
             <p>Years Of Experiences</p>
           </div>
-          <!-- add link here -->
-
           <a><i class="bx bx-chevron-right"></i></a>
         </div>
 
@@ -65,13 +65,19 @@
             <h3>+2</h3>
             <p>Completed Projects</p>
           </div>
-          <!-- add link here -->
-
           <a><i class="bx bx-chevron-right"></i></a>
         </div>
       </div>
     </div>
     <img class="profile-picture" src="./media/462547072_370033636136262_4545678651478696792_n.jpg" />
+    <div class="overlay" id="overlay"></div>
+    <form id="contact-form">
+      <a><i class="bx bx-x" onclick="closeContactForm()"></i></a>
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
   </section>
 
   <footer id="footer">
@@ -87,7 +93,7 @@
     </div>
   </footer>
 
-  <script src="index.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
